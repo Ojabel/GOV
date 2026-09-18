@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service-Wide Capacity Building Program</title>
+  <meta name="description" content="Official information for the Service-Wide Capacity Building Program.">
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Arial Black', 'Impact', sans-serif;
+    }
+
+    /* Full screen background container */
+    .banner-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+
+      background-image: url('assets/capacity-building-program.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Light overlay to keep text readable */
+    .banner-container::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.82) 0%,
+        rgba(255, 255, 255, 0.56) 40%,
+        rgba(255, 255, 255, 0.28) 100%
+      );
+      z-index: 1;
+    }
+
+    .banner-text {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      width: 100%;
+    }
+
+    /* SERVICE-WIDE */
+    .service-wide {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: clamp(1.2rem, 4vw, 3rem);
+      font-weight: 700;
+      color: #2c2c2c;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+
+    /* CAPACITY BUILDING */
+    .capacity-building {
+      font-size: clamp(2rem, 8vw, 6rem);
+      font-weight: 900;
+      color: #1b7a34;
+      letter-spacing: 1px;
+      line-height: 1.1;
+      text-transform: uppercase;
+
+      -webkit-text-stroke: 3px #ffffff;
+      text-shadow:
+        2px 2px 0 #ffffff,
+        -1px -1px 0 #ffffff,
+        1px -1px 0 #ffffff,
+        -1px 1px 0 #ffffff,
+        3px 3px 5px rgba(0, 0, 0, 0.3);
+
+      margin-bottom: 0.5rem;
+    }
+
+    /* PROGRAM */
+    .program {
+      font-size: clamp(2rem, 8vw, 6rem);
+      font-weight: 900;
+      letter-spacing: 2px;
+      line-height: 1.1;
+      text-transform: uppercase;
+      display: inline-block;
+      width: auto;
+      max-width: 80%;
+
+      -webkit-text-stroke: 3px #ffffff;
+      color: #e57373;
+      text-shadow:
+        2px 2px 0 #ffffff,
+        -1px -1px 0 #ffffff,
+        1px -1px 0 #ffffff,
+        -1px 1px 0 #ffffff,
+        3px 3px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 600px) {
+      .service-wide {
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
+        letter-spacing: 1px;
+      }
+
+      .capacity-building,
+      .program {
+        font-size: clamp(2.8rem, 12vw, 4.5rem);
+        -webkit-text-stroke: 1.5px #ffffff;
+        text-shadow:
+          1px 1px 0 #ffffff,
+          -1px -1px 0 #ffffff,
+          1px -1px 0 #ffffff,
+          -1px 1px 0 #ffffff,
+          2px 2px 4px rgba(0, 0, 0, 0.25);
+      }
+
+      .program {
+        letter-spacing: 1px;
+        max-width: 75%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner-container">
+    <div class="banner-text">
+      <div class="service-wide">SERVICE-WIDE</div>
+      <div class="capacity-building">CAPACITY BUILDING</div>
+      <div class="program">PROGRAM</div>
+    </div>
+  </div>
+
+</body>
+</html>
